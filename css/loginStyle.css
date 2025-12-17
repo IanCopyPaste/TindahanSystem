@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+}
+nav{
+    padding: 20px 20px 20px 60px;
+    align-items: center;
+    display: flex;
+}
+body{
+    position: relative;
+}
+body .circle-right{
+    position: absolute;
+    position: fixed;
+    top: -60%;
+    left: 70%;
+    z-index: 1;
+    height: 1000px;
+}
+nav img {
+  height: 7vw;
+  max-height: 70px;
+  min-height: 30px;
+  width: auto;
+  margin-right: 3px;
+}
+nav h1{
+    color: #0066FF;
+    font-size: clamp(30px, 4vw, 45px);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main-container{
+    width: 35vw;
+    min-width: 250px;
+    max-width: 350px;
+    margin: 10px auto;
+    padding: 85px;
+    box-shadow: 0px 0px 10px 1px grey;
+    height: 57vh;
+    min-height: 500px;
+    border-radius: 15px;
+}
+.label-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.label-container img{
+    width: auto;
+    height: 4vw;
+    min-height: 50px;
+    max-height: 120px;
+}
+.label-container label{
+    font-size: clamp(20px,3vw,27px);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: 30px auto;
+}
+.label-container img{
+    margin-bottom: 20px;
+}
+.txt-container{
+    position: relative;
+    width: 100%;
+}
+.txt-container input{
+    margin: 10px 0 10px 0;
+    width: 100%;
+    padding: 10px 43px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    border: 0.7px solid black;
+}
+.txt-container input:focus{
+  border: 0.7px solid rgb(148, 148, 148);
+}
+.txt-container input::placeholder{
+    color: rgb(100, 100, 100);
+}
+.txt-container img{
+    height: 25px;
+    width: auto;
+    position: absolute;
+    top: 25%;
+    left: 15px;
+    z-index: 1;
+}
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+}
+.btn-container input{
+    margin: auto;
+    width: 90%;
+    color: white;
+    background-color: #0066FF;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 3px;
+    transition: .5s;
+}
+.btn-container input:hover{
+    cursor: pointer;
+    background-color: #025ce2;
+    transform: scale(1.01);
+    box-shadow: 0px 0px 4px 1px grey;
+}
+.btn-container .miniLabel-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.btn-container .miniLabel-container a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: clamp(13px,2.3vw,15px);
+    width: auto;
+    text-decoration: none;
+    color: #0066FF
+}
+.bottom-container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-container label{
+    margin: 25px auto;
+}
+.bottom-container button{
+    margin-bottom: 20px;
+    padding: 2px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    border: none;
+    background-color: white;
+    box-shadow: 1px 1px 7px 2px grey;
+    border-radius: 2px;
+}
+.bottom-container img{
+    width: auto;
+    height: 30px;
+}
+
+
+@media(max-width: 800px){
+    nav{
+        padding: 14px 20px 20px 10px;
+    }
+    .main-container{
+        padding: 20px auto;
+        width: 50%;
+    }
+}
+@media(max-width: 600px){
+    nav{
+        padding: 10px 20px 20px 10px;
+    }
+    .main-container{
+        width: 50%;
+        box-shadow:  none;
+    }
+    .bottom-container button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border: none;
+    }
+    .bottom-container button span{
+        display: none;
+    }
+}
+@media(max-width: 400px){
+    nav{
+        padding: 10px 20px 20px 10px;
+    }
+    .main-container{
+       min-width: 50%;
+    }
+}
+

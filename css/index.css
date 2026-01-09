@@ -13,7 +13,6 @@ html, body {
     justify-content: center;
     width: 100%;
     height: auto;
-    box-sizing: border-box;
 }
 .all-container .right-container, .left-container{
     height: auto;
